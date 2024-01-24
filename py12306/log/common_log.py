@@ -71,7 +71,7 @@ class CommonLog(BaseLog):
     @classmethod
     def print_welcome(cls):
         self = cls()
-        self.add_quick_log('######## py12306 购票助手，本程序为开源工具，请勿用于商业用途 ########')
+        self.add_quick_log('######## 🚅Helper 12306，本程序为开源工具，请勿用于商业用途 ########')
         if Const.IS_TEST:
             self.add_quick_log()
             self.add_quick_log('当前为测试模式，程序运行完成后自动结束')

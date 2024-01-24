@@ -35,7 +35,8 @@ class Config:
 
     ORDER_SEAT_TYPES = {'特等座': 'P', '商务座': 9, '一等座': 'M', '二等座': 'O', '软卧': 4, '硬卧': 3, '硬座': 1, '无座': 1}
 
-    PROJECT_DIR = path.dirname(path.dirname(path.abspath(__file__))) + '/'
+    # PROJECT_DIR = path.dirname(path.dirname(path.abspath(__file__))) + '/'
+    PROJECT_DIR = './'
 
     # Query
     RUNTIME_DIR = PROJECT_DIR + 'runtime/'
