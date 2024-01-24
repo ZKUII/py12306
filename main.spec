@@ -3,9 +3,9 @@
 
 a = Analysis(
     ['main.py'],
-    pathex=[],
+    pathex=['py12306'],
     binaries=[],
-    datas=[],
+    datas=[('data','data'),('runtime/query','runtime/query')],
     hiddenimports=[],
     hookspath=[],
     hooksconfig={},
