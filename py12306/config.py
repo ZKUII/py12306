@@ -91,7 +91,7 @@ class Config:
     WEB_ENABLE = 0
     WEB_USER = {}
     WEB_PORT = 8080
-    WEB_ENTER_HTML_PATH = PROJECT_DIR + 'py12306/web/static/index.html'
+    WEB_ENTER_HTML_PATH = path.dirname(path.dirname(path.abspath(__file__))) + '/' + 'py12306/web/static/index.html'
 
     # CDN
     CDN_ENABLED = 0

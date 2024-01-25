@@ -80,7 +80,7 @@ class CommonLog(BaseLog):
             self.add_quick_log('日志已输出到文件中: {}'.format(Config().OUT_PUT_LOG_TO_FILE_PATH))
         if Config().WEB_ENABLE:
             self.add_quick_log()
-            self.add_quick_log('WEB 管理页面已开启，请访问 主机地址 + 端口 {} 进行查看'.format(Config().WEB_PORT))
+            self.add_quick_log('WEB 管理页面已开启，请访问：http://127.0.0.1:{} 进行查看'.format(Config().WEB_PORT))
 
         self.add_quick_log()
         self.flush(file=False, publish=False)
